@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Ayang Dari Nadya cantik</title>
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body 
+style=
+"background-image:url(https://media.istockphoto.com/id/1433196601/id/foto/foto-langit-musim-panas-biru-murni.jpg?s=1024x1024&w=is&k=20&c=4ytIH6AP2lg3wgMqvWe1-FRDPji3K3lI39RvNO2WBU0=);
+"
+class="flex justify-center h-screen items-center"
+>
+<div 
+class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80" id="Kartu"
+>
+<h1 class="text-3xl">Happy Birthday</h1>
+<h1 class="text-4xl text-blue-500 font-bold animate__animated animate__pulse animate__infinite"
+>
+Glenadi Teguh Alfana
+</h1>
+<button 
+class="p-2 bg-blue-600 text-white rounded mt-5 hover : bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahKartu()"
+>
+klik Disini Sayang !
+</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+  confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+});
+let Kartu= document.getElementById("Kartu");
+function ubahKartu() {
+Kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+  selamat ulang tahun sayang,semoga tahun ini banyak kebahagiaan,rezeki yang lancar,segala yang kamu inginkan tercapai,semoga kita terus bareng,semoga cepet ketemu acuu,saling support ya love u ayang🎂❤
+</h1>
+<h2 class="mt-3 animate__animated animate__fadeIn">- Dari : Nadya Cantik -
+</h2>
+ <button 
+class="p-2 bg-slate-600 text-white rounded mt-5 hover : bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()"
+>
+Tutup Sayang !
+</button>
+`;
+} 
+function refresh() {
+  location.reload();
+}
+</script>
+</body>
+</html>
